@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MatFlatButtonComponent } from './mat-flat-button/mat-flat-button.component';
+import { AuthorServiceService } from './author-service.service';
+import { AuthorsComponentComponent } from './authors-component/authors-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MatFlatButtonComponent
+    AuthorsComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthorServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

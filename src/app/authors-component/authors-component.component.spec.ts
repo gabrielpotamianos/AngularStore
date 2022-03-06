@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MatFlatButtonComponent } from './mat-flat-button.component';
+import { AuthorsComponentComponent } from './authors-component.component';
 
-describe('MatFlatButtonComponent', () => {
-  let component: MatFlatButtonComponent;
-  let fixture: ComponentFixture<MatFlatButtonComponent>;
+describe('AuthorsComponentComponent', () => {
+  let component: AuthorsComponentComponent;
+  let fixture: ComponentFixture<AuthorsComponentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MatFlatButtonComponent ]
+      declarations: [ AuthorsComponentComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MatFlatButtonComponent);
+    fixture = TestBed.createComponent(AuthorsComponentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
