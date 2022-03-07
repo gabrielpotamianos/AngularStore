@@ -1,8 +1,9 @@
 
-<div class="test">
-    <button class="btn" (click)="changeIcon()">
-    <span class="glyphicon"
-    [class.glyphicon-star]="clicked"
-    [class.glyphicon-star-empty]="!clicked"></span>
-    </button>
+<div class="button">
+    <form>
+        <div class="form-group">
+          <input [class.form-control]="text" (keyup)="text=getValue($event)" class="form-control" >
+          <p>{{text | titlecase}}</p>
+        </div>
+    </form>
 </div>
