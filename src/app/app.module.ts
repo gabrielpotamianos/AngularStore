@@ -3,19 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthorServiceService } from './author-service.service';
-import { AuthorsComponentComponent } from './authors-component/authors-component.component';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AuthorsComponentComponent
+    ButtonComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [AuthorServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
