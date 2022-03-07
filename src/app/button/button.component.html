@@ -1,9 +1,6 @@
 
 <div class="button">
-    <form>
-        <div class="form-group">
-          <input [class.form-control]="text" (keyup)="text=getValue($event)" class="form-control" >
-          <p>{{text | titlecase}}</p>
-        </div>
-    </form>
+          <input type="text" [(ngModel)]="title">
+          <br>
+          {{title | titlecase}}
 </div>
