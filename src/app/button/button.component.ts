@@ -6,12 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-  suffix = "-empty";
   clicked: boolean;
-  ending: string;
   constructor() {
-    this.clicked = false;
-    this.ending = this.suffix; 
+    this.clicked = true;
     }
 
   ngOnInit(): void {
@@ -19,9 +16,7 @@ export class ButtonComponent implements OnInit {
   }
 
   changeIcon(){
-    this.ending= this.clicked ? "" : this.suffix;
     this.clicked = !this.clicked;
-    console.log("works");
   }
 
 }

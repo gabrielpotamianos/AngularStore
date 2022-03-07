@@ -1,6 +1,8 @@
 
 <div class="test">
     <button class="btn" (click)="changeIcon()">
-    <span class="glyphicon glyphicon-star{{ ending }}"></span>
+    <span class="glyphicon"
+    [class.glyphicon-star]="clicked"
+    [class.glyphicon-star-empty]="!clicked"></span>
     </button>
 </div>
