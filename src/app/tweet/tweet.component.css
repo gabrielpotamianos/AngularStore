@@ -1,0 +1,10 @@
+.tweet{
+    text-align: center;
+    margin-top: 30px;
+}
+.glyphicon{
+    color: #ccc;;
+}
+.highlighted{
+    color: palevioletred;
+}

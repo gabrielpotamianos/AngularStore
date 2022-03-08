@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'store';
+  tweet={
+    body: "this is some text",
+    isLiked: false,
+    totalLikes: 0
+  }
 }
